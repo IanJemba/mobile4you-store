@@ -39,10 +39,25 @@ $devices = mysqli_fetch_all($result, MYSQLI_ASSOC);
             max-width: 100px;
             max-height: 100px;
         }
+
+        li {
+            text-decoration: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
     </style>
 </head>
 
 <body>
+    <nav>
+        <ul>
+            <li><a href="devices.php">Home</a></li>
+            <li><a href="loginpage.php"> Log In</a>
+        </ul>
+    </nav>
     <h3>Devices Overview</h3>
     <hr>
     <?php foreach ($devices as $device) : ?>
